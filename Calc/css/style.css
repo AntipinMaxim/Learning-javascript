@@ -1,0 +1,207 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*----------------------------------------------------------*/
+._center {
+  max-width: 1190px;
+  margin: 0px auto;
+  padding: 0px 10px;
+}
+
+._ibg img {
+  position: absolute;
+  z-index: -50;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.calculator {
+  width: 500px;
+}
+.calculator__buttons {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+      grid-template-areas: "n7 n8 n9 divide" "n4 n5 n6 multipl" "n1 n2 n3 subtraction" "n0 equals equals addition";
+}
+.number-0 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: n0;
+}
+
+.number-1 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: n1;
+}
+
+.number-2 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: n2;
+}
+
+.number-3 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+  grid-area: n3;
+}
+
+.number-4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: n4;
+}
+
+.number-5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: n5;
+}
+
+.number-6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: n6;
+}
+
+.number-7 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: n7;
+}
+
+.number-8 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: n8;
+}
+
+.number-9 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: n9;
+}
+
+.number-divide {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+  grid-area: divide;
+}
+
+.number-multiply {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+  grid-area: multipl;
+}
+
+.number-subtraction {
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
+  grid-area: subtraction;
+}
+
+.number-addition {
+  -ms-grid-row: 7;
+  -ms-grid-column: 7;
+  grid-area: addition;
+}
+
+.number-equals {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-area: equals;
+}
