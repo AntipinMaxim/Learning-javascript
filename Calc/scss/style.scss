@@ -21,7 +21,21 @@
 .wrapper {
 }
 .calculator {
-	width: 500px;
+	padding: 10px 0px;
+
+	// .calculator__container
+
+	&__container {
+		width: 500px;
+	}
+
+	// .calculator__title
+	&__title {
+		text-align: center;
+		font-size: 25px;
+		margin: 0px 0px 25px 0px;
+	}
+
 	// .calculator__buttons
 
 	&__buttons {

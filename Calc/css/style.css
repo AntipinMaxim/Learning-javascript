@@ -107,7 +107,15 @@ h6 {
 }
 
 .calculator {
+  padding: 10px 0px;
+}
+.calculator__container {
   width: 500px;
+}
+.calculator__title {
+  text-align: center;
+  font-size: 25px;
+  margin: 0px 0px 25px 0px;
 }
 .calculator__buttons {
   display: -ms-grid;
